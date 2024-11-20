@@ -1,0 +1,20 @@
+
+
+
+
+ class fritProgram
+ {
+  public static void main(String[] args)
+ {
+     System.out.println("studentid:2413110756");
+     System.out.println("studentName:Pookrong Maleepan");
+     System.out.println("Topic:gitHub");
+     System.out.println("Date:11/20/2024");
+     JOptionPane.showMessageDiaLog(null, 
+                                   "studentid:2413110756"+
+                                   "\nstudentName:Pookrong Maleepan"+
+                                   "\nTopic:gitHub"+
+                                   "\nDate:11/20/2024"+
+                                   JOptionPane.QUESTION_MESSAGE);
+  }
+ }
