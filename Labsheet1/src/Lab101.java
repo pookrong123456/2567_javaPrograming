@@ -19,9 +19,11 @@ public class Lab101 {
         double discountAmount = (totalPrice * discountPercent) / 100;
         double finalAmount = totalPrice - discountAmount;
 		
-		System.out.println("--------------------------------------");
-		System.out.println("Total price is "+(productPrice * productUnit)+"Baht.");
-		System.out.println("--------------------------------------");
+        System.out.println("-----------------------------------");
+        System.out.println("Total Price is " + totalPrice + " Baht.");
+        System.out.println("Discount from " + discountPercent + "%: " + discountAmount + " Baht.");
+        System.out.println("Amount to be paid: " + finalAmount + " Baht.");
+        System.out.println("-----------------------------------");
 		
 		
 		

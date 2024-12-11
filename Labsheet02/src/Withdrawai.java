@@ -17,7 +17,7 @@ public class Withdrawai {
 			JOptionPane.showMessageDialog(null,"Error : Cannot withdraw "+(moneyWithdraw%100),"\nERROR",JOptionPane.ERROR_MESSAGE);
 					
 		}else {
-			JOptionPane.showConfirmDiaLog(null,"You withdraw"+ moneyWithdraw +"baht."+(moneyWithdraw/1000),"\n1,000","\n500 = "+((moneyWithdraw%1000)/500),"\n500 = "+((moneyWithdraw%500)/100));
+			JOptionPane.showMessageDialog(null,"You withdraw"+ moneyWithdraw +"baht."+(moneyWithdraw/1000),"\n1,000","\n500 = "+((moneyWithdraw%1000)/500),"\n500 = "+((moneyWithdraw%500)/100));
 		}
 		
 				
