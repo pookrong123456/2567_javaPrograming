@@ -1,35 +1,30 @@
-import java.util.Scanner;
+
 import javax.swing.JOptionPane;
 
-import javax.swing.*;
 public class Lab303_1 {
+    public static void main(String[] args) {
+        String word; 
+        int num = 0; 
 
-	public static void main(String[] args) {
-		Scanner kb = new Scanner(System.in);
-		String word;
-		int num =0;
-		
-		
-			System.out.print("Input a sentance : ");
-			word = kb.nextLine();
-			while(!word.endsWith(".")) {
-				System.out.print("Input a sentance,again : ");
-				word = kb.nextLine();
-							
-		}
-			for(int i =0; i<word.length();i++) {
-				char ch = word.charAt(i);
-				if(ch == ' ') {
-					num++;
-					
-				}
-				
-			}
-			System.out.println();
-			System.out.println("The sentence has"+num+"spacebar.");
-			System.out.println("The sentence has"+(num+1)+"word.");
-			
+        word = JOptionPane.showInputDialog("Input a sentance :");
 
-	}
+        while (!word.endsWith(".")) {
+            word = JOptionPane.showInputDialog("Input a sentance, again :");
+        }
 
+        for (int i = 0; i < word.length(); i++) {
+            if (word.charAt(i) == ' ') {
+                num++;
+            }
+        }
+
+        String[] words = word.trim().split("\\s+");
+        int wordCount = words.length; 
+
+        String result = 
+                       "This sentence has " + num + " spacebar(s).\n" 
+                      + "This sentence has " + wordCount + " word(s).";
+
+        JOptionPane.showMessageDialog(null, result);
+    }
 }
