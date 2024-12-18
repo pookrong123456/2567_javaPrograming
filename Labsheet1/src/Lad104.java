@@ -2,7 +2,7 @@ import javax.swing.*;
 
 import javax.swing.*;
 
-public class Lab104 {
+public class Lad104 {
     public static void main(String[] args) {
 
         

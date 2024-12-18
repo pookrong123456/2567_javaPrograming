@@ -1,6 +1,6 @@
 import javax.swing.*;
 
-public class Lab103 {
+public class Lad103 {
     public static void main(String[] args) {
         
         String input = JOptionPane.showInputDialog("Input Time Parking (minute):");
