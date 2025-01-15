@@ -15,11 +15,11 @@ public class Lab507 {
 	public static void showEven(int[] nums) {
 		String evenNumbers = "List of even numbers: ";
 
-	    for (int num : nums) {
-	        if (num % 2 == 0) { 
-	            evenNumbers += num + " "; 
-	        }
-	    }
+		for (int i = 0; i < nums.length; i++) {
+            if (nums[i] % 2 == 0) { 
+                evenNumbers += nums[i] + " ";
+            }
+        }
 
 	    JOptionPane.showMessageDialog(null, evenNumbers);
 	}
@@ -30,11 +30,11 @@ public class Lab507 {
     public static void showOdd(int[] nums) {
     	String evenNumbers = "List of even numbers: ";
 
-	    for (int num : nums) {
-	        if (num % 2 != 0) { 
-	            evenNumbers += num + " "; 
-	        }
-	    }
+    	for (int i = 0; i < nums.length; i++) {
+            if (nums[i] % 2 != 0) { 
+                evenNumbers += nums[i] + " ";
+            }
+        }
 
 	    JOptionPane.showMessageDialog(null, evenNumbers);
 	}
