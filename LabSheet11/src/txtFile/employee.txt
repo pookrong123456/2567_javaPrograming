@@ -1,0 +1,3 @@
+gun	hr
+hun	hr
+yun	programmer
